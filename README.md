@@ -1,10 +1,10 @@
-# 🛠️ Java Maven Simple App
+# Java Maven Simple App
 
 This is a basic Java application that demonstrates a simple user login functionality using Maven for build automation and TestNG for testing. The app reads credentials from a `.properties` file and verifies them.
 
 ---
 
-## 📦 What is Maven?
+## - What is Maven?
 
 Apache Maven is a **build automation and dependency management** tool for Java projects. It uses a central configuration file called `pom.xml` (Project Object Model) to manage:
 
@@ -13,10 +13,11 @@ Apache Maven is a **build automation and dependency management** tool for Java p
 - Plugins
 - Build lifecycle
 
-### 🔁 Common Maven Goals (Phases)
+### - Common Maven Goals (Phases)
 
 | Phase     | Description                                |
 |-----------|--------------------------------------------|
+| `mvn clean` | Clean previous Builds |
 | `mvn validate` | Check the project structure and configs    |
 | `mvn compile`  | Compile the Java source code               |
 | `mvn test`     | Run the tests using a framework (like TestNG) |
@@ -26,7 +27,7 @@ Apache Maven is a **build automation and dependency management** tool for Java p
 
 ---
 
-## 📁 Project Structure
+## - Project Structure
 
 ```
 project/
@@ -52,7 +53,7 @@ project/
 
 ---
 
-## 🚀 Running the App on EC2 (Amazon Linux)
+## - Running the App on EC2 (Amazon Linux)
 
 1. **Launch an EC2 Instance (t2.micro)**
    - Use Amazon Linux 2 AMI.
@@ -93,11 +94,10 @@ java -cp target/project-0.0.1-SNAPSHOT.jar com.project.App
 
 ---
 
-## ✅ Notes
+## - Notes
 
 - Ensure `config.properties` is available in `resources/` and bundled in your JAR.
 - You can modify test data or logic based on new requirements.
 - This app demonstrates basics — ideal for bootstrapping Maven-based projects.
 
 ---
-```
